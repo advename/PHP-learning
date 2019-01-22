@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /php-basics/4.0_Views_with_Partials/
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ [NC]
+RewriteRule ^.*$ index.php [END]
